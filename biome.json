@@ -12,7 +12,14 @@
 			"**/*.js",
 			"**/*.jsx",
 			"**/*.json",
-			"!!*.gen.ts"
+			"!!dist",
+			"!!build",
+			"!!.output",
+			"!!node_modules",
+			"!*.gen.ts",
+			"!!.vinxi",
+			"!!.react-router",
+			"!!.tanstack"
 		]
 	},
 	"formatter": {},
