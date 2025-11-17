@@ -40,7 +40,7 @@ export function MainLayout({ children }: MainLayoutProps) {
 								to="/"
 								className="font-bold text-fg text-xl transition-colors hover:text-primary"
 							>
-								React Router App
+								TanStack Start App
 							</Link>
 							<nav className="hidden space-x-1 md:flex">
 								{navItems.map((item) => (
@@ -87,7 +87,7 @@ export function MainLayout({ children }: MainLayoutProps) {
 					<div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
 						<div className="text-center md:text-left">
 							<p className="text-muted-fg text-sm">
-								© 2024 React Router Starter. Built with React Router v7.
+								© 2024 TanStack Start Starter. Built with TanStack Start.
 							</p>
 						</div>
 						<div className="flex items-center space-x-4">
@@ -103,12 +103,12 @@ export function MainLayout({ children }: MainLayoutProps) {
 								</svg>
 							</a>
 							<a
-								href="https://reactrouter.com"
+								href="https://tanstack.com/router"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="text-muted-fg transition-colors hover:text-fg"
 							>
-								<span className="sr-only">React Router</span>
+								<span className="sr-only">TanStack Router</span>
 								<span className="font-medium text-sm">Docs</span>
 							</a>
 						</div>
