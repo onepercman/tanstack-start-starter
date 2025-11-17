@@ -27,7 +27,6 @@
 	},
 
 	// CSS & Tailwind
-	"css.lint.unknownAtRules": "ignore",
 	"tailwindCSS.classFunctions": ["tv"],
 
 	// File exclusions for auto-generated files
