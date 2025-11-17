@@ -40,7 +40,11 @@ export function MainLayout({ children }: MainLayoutProps) {
 								to="/"
 								className="font-bold text-fg text-xl transition-colors hover:text-primary"
 							>
-								TanStack Start App
+								<img
+									src="/tanstack-circle-logo.png"
+									alt=""
+									className="size-10"
+								/>
 							</Link>
 							<nav className="hidden space-x-1 md:flex">
 								{navItems.map((item) => (
@@ -87,7 +91,7 @@ export function MainLayout({ children }: MainLayoutProps) {
 					<div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
 						<div className="text-center md:text-left">
 							<p className="text-muted-fg text-sm">
-								© 2024 TanStack Start Starter. Built with TanStack Start.
+								© 2025 TanStack Start Starter. Built with TanStack Start.
 							</p>
 						</div>
 						<div className="flex items-center space-x-4">
