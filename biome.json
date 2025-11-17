@@ -47,7 +47,7 @@
 				"useLiteralKeys": "off"
 			},
 			"correctness": {
-				"noUnusedImports": "error",
+				"noUnusedImports": { "fix": "safe", "level": "info" },
 				"useExhaustiveDependencies": "off"
 			},
 			"style": {
