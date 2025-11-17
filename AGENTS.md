@@ -5,7 +5,7 @@
 - **Documentation:** NEVER create markdown files unless explicitly requested or confirm if necessary
 - **Package Manager:** ALWAYS `pnpm`
 - **Type Imports:** `import type { ... }`
-- **Barrel Exports:** Every folder has `index.ts` EXCEPT `modules/index.ts`
+- **Barrel Exports:** Every folder has `index.ts` EXCEPT `modules/index.ts` and `shared/components/index.ts`
 - **Styling:** ALWAYS `cn()` + tokens only, NEVER hardcode colors
 - **State:** Select fields `useStore(s => s.field)` NOT `useStore()`
 - **Imports:** `~/modules/[feature]` ✓ NOT `~/modules` ✗
@@ -26,18 +26,21 @@ modules/                # Features (NO index.ts here)
   └─ auth/
      └─ index.ts ✓
 shared/                 # Cross-feature code
-  ├─ components/
-  │  ├─ ui/
-  │  │  └─ index.ts ✓
-  │  └─ index.ts ✓
+  ├─ components/        # NO index.ts here ✗
+  │  └─ ui/
+  │     └─ index.ts ✓
   ├─ utils/index.ts ✓
   └─ stores/index.ts ✓
 ```
 
 **Barrel export rules:**
 - Every feature/folder has `index.ts` ✓
-- EXCEPT `modules/index.ts` NEVER exists ✗
-- Import: `~/modules/[feature]` ✓ NOT `~/modules` ✗
+- EXCEPT these NEVER have `index.ts`: ✗
+  - `modules/index.ts`
+  - `shared/components/index.ts`
+- Import patterns:
+  - `~/modules/[feature]` ✓ NOT `~/modules` ✗
+  - `~/shared/components/[component]` ✓ NOT `~/shared/components` ✗
 
 ## File Naming
 Files: `kebab-case`

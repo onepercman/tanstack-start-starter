@@ -68,9 +68,9 @@
 			"nursery": {
 				"useSortedClasses": {
 					"level": "warn",
+					"fix": "safe",
 					"options": {
-						"attributes": ["classList"],
-						"functions": ["cn", "tv", "clsx"]
+						"functions": ["cn", "cx", "tv", "clsx"]
 					}
 				}
 			}
